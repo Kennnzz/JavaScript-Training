@@ -1,18 +1,28 @@
-// Let variable. 'Let' is able to be overwritten
-let age = 25;
-let year = 2019;
+// strings
+console.log('hello, world');
 
-// More than 1 variable in a log
-console.log(age, year);
+let email = 'mario@thenetninja.co.uk';
+console.log(email);
 
-// age does not need let
-// as it's alread been declared
-age = 30;
-console.log(age);
+// string concatenation
+let firstName = 'Brandon';
+let lastName = 'Sanderson';
 
-// Const variable is unable to be overwritten
-const points = 100;
-console.log(points);
+let fullName = firstName + ' ' + lastName;
+console.log(fullName);
 
-var score = 75;
-console.log(score);
+// getting characters
+console.log(fullName[2]);
+
+// string length
+console.log(fullName.length);
+
+// string methods
+console.log(fullName.toUpperCase());
+let result = fullName.toLowerCase();
+console.log(result, fullName);
+
+// Indexof takes the index position of a string
+// In this case, the '@' is in the 5 position.
+let index = email.indexOf('@');
+console.log(index);
