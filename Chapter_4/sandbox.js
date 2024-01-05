@@ -1,12 +1,12 @@
-// arguments & parameters
+// returning values
 
-const speak = function(name = 'lugi', time = 'night'){
-    console.log(`good ${time} ${name}`);
+// const speak = function(name = 'lugi', time = 'night'){
+//     console.log(`good ${time} ${name}`);
+// };
+
+const calcArea = function(radius){
+    return 3.14 * radius**2;
 };
 
-console.log(name); // this code wont work because it is outside of the function
-
-// speak('mario', 'morning'); // code needs to match order of parameters
-speak(); // putting no parameters will make it so result is undefined.
-// u can counter undefined by predefiniing luigi and night at parameters
-
+const a = calcArea(5);
+console.log(a);
