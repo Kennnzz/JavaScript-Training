@@ -1,12 +1,11 @@
-const link = document.querySelector('a');
+const title = document.querySelector('h1');
 
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.thenetninja.co.uk'); // change html attribute using javascript
-link.innerText = 'TheNet Ninja Website';
+// title.setAttribute('style', 'margin: 50px;'); // this overwrites the existing style of the title
 
-const msg = document.querySelector('p');
+console.log(title.style); // see all of the styles using this syntax
+console.log(title.style.color);
 
-console.log(msg.getAttribute('class'));
-msg.setAttribute('class', 'success'); // changes class attribute from class to success in the inspect element
-msg.setAttribute('style', 'color: green;'); // if tag does not exists, such as the color tag,
-// does not matter because javascript will still create it
+title.style.margin = '50px'; // to add attributes, not overwrite, use this way
+title.style.color = 'crimson';
+title.style.fontSize = '60px';
+title.style.margin = ''; // removes the margin style
