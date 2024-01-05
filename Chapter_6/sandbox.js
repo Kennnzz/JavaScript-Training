@@ -1,11 +1,21 @@
-const title = document.querySelector('h1');
+const content = document.querySelector('p');
 
-// title.setAttribute('style', 'margin: 50px;'); // this overwrites the existing style of the title
+console.log(content.classList);
+content.classList.remove('error');
+content.classList.add('success');
 
-console.log(title.style); // see all of the styles using this syntax
-console.log(title.style.color);
+const paras = document.querySelectorAll('p');
 
-title.style.margin = '50px'; // to add attributes, not overwrite, use this way
-title.style.color = 'crimson';
-title.style.fontSize = '60px';
-title.style.margin = ''; // removes the margin style
+paras.forEach(p => {
+    if(p.textContent.includes('error')){
+        p.classList.add('error');
+    }
+    if(p.innerText.includes('success')){
+        p.classList.add('success')
+    }
+});
+
+const title = document.querySelector('.title');
+
+title.classList.toggle('test');
+title.classList.toggle('test');
