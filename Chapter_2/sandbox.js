@@ -1,29 +1,18 @@
-// booleans & comparisons
-console.log(true, false, "true", "false");
-
-// methods can return booleans
-let email = 'luigi@thenetninja.co.uk';
-let names = ['mario', 'luigi', 'toad'];
-
-// let result = email.includes('@');
-// let result = names.includes('bowser')
-
-// console.log(result);
-
-// comparison operators
 let age = 25;
 
-console.log(age == 25);
-console.log(age == 30);
-console.log(age != 30);
-console.log(age > 20);
-console.log(age < 20);
-console.log(age <= 25);
-console.log(age >= 25);
+// loose comparison (different types can still be equal)
 
-let name = 'shaun';
+// console.log(age == 25);
+// console.log(age == '25');
+// console.log(age != 25);
+// console.log(age != '25');
 
-console.log(name == 'shaun');
-console.log(name == 'Shaun');
-console.log(name > 'crystal');
-console.log(name > 'Crystal');
+// strict comparison(different types cannot be equal)
+
+// triple '=' strict comparison. "is age variable the same value and type to 25"
+console.log(age === 25);
+
+// now string 25 ('25') is false due to strict comparison
+console.log(age === '25');
+console.log(age !== 25);
+console.log(age !== '25');
