@@ -1,23 +1,12 @@
-const para = document.querySelector('p');
+const link = document.querySelector('a');
 
-// console.log(para.innerText)
-// para.innerText = 'ninjas are awesome!'; // this += appends the text to the 'hello, world'. 
-// an equals '=' overrides it
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.thenetninja.co.uk'); // change html attribute using javascript
+link.innerText = 'TheNet Ninja Website';
 
-const paras = document.querySelectorAll('p');
+const msg = document.querySelector('p');
 
-// paras.forEach(para => {
-//     console.log(para.innerText);
-//     para.innerText += ' new text';
-// });
-
-const content = document.querySelector('.content');
-
-// console.log(content.innerHTML)
-// content.innerHTML += '<h2>THIS IS A NEW H2</h2>'; // += to append. = to overwrite
-
-const people = ['mario', 'luigi', 'yoshi'];
-
-people.forEach(person => {
-    content.innerHTML += `<p>${person}</p>`;
-});
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success'); // changes class attribute from class to success in the inspect element
+msg.setAttribute('style', 'color: green;'); // if tag does not exists, such as the color tag,
+// does not matter because javascript will still create it
