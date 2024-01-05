@@ -1,24 +1,23 @@
-// if statements
-const age = 25;
+// logical operators - OR || and AND &&
 
-if(age > 20){
-    console.log('you are over 20 years old');
-}
+const password = 'p@ss';
 
-const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
-
-if(ninjas.length > 4){
-    console.log("that's a lot of ninjas") // Use double quotes if you're using an apostrophe (')
-}
-
-// if and else if statements
-
-const password = 'p@ssword';
-
-if(password.length >= 12){
+if(password.length >= 12 && password.includes('@')){
     console.log('that password is mighty strong');
-} else if(password.length >= 8){
-    console.log('that password is long enough!');
+} else if(password.length >= 8 || password.includes('@') && password.length >= 5){ 
+    console.log('that password is strong enough!');
 } else { // if first code block is not true, then move to else if/else statement
-  console.log('password is not long enough')
+  console.log('password is not strong enough')
 }
+
+// logical NOT (!)
+
+let user = false;
+
+// if statements only run if value is true. since user is false, we used (!) NOT operator to make false into true
+if(!user){
+    console.log('you must be logged in to continue');
+}
+
+console.log(!true);
+console.log(!false);
