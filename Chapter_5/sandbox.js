@@ -1,18 +1,20 @@
-// Math object
+// Primitive values
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E)
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
 
-const area = 7.7;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-console.log(Math.round(area)); // round
-console.log(Math.floor(area)); // always round down
-console.log(Math.ceil(area)); // always round up
-console.log(Math.trunc(area)); // leaves the integer
+// scoreOne = 100; // when we make copies of primitive values and change one of them
+// // it does not affect the value
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-// random numbers
-const random = Math.random() // random is always between 0-1.
-console.log(random);
-console.log(Math.round(random * 100));
+// reference values
 
+const userOne = { name: 'ryu', age: 30 };
+const userTwo = userOne; // these 2 both point to the same object
+
+console.log(userOne, userTwo);
+
+userOne.age = 40; // this will change both of the user's ages even if you just do userOne
+console.log(userOne, userTwo);
