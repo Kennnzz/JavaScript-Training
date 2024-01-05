@@ -1,27 +1,12 @@
-// function declaration
-// function greet(){
-//     console.log('hello there');
-// }
+// arguments & parameters
 
-// function expression
-// const speak = function(){ // function expression means we store a function inside a variable
-//     console.log('good day!');
-// };
-
-// greet();
-// greet();
-// greet();
-
-speak();
-speak();
-speak();
-
-// function declaration
-function greet(){ // you can use greet() (the one above) to call declarations above the functions
-    // but you cannot do it with expressions. this is called 'hoist'
-    console.log('hello there');
-}
-
-const speak = function(){ // function expression means we store a function inside a variable
-    console.log('good day!');
+const speak = function(name = 'lugi', time = 'night'){
+    console.log(`good ${time} ${name}`);
 };
+
+console.log(name); // this code wont work because it is outside of the function
+
+// speak('mario', 'morning'); // code needs to match order of parameters
+speak(); // putting no parameters will make it so result is undefined.
+// u can counter undefined by predefiniing luigi and night at parameters
+
