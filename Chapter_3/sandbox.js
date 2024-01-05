@@ -1,23 +1,59 @@
-// logical operators - OR || and AND &&
+// break and continue
 
-const password = 'p@ss';
+const scores = [50, 25, 0, 100, 20 ,10];
 
-if(password.length >= 12 && password.includes('@')){
-    console.log('that password is mighty strong');
-} else if(password.length >= 8 || password.includes('@') && password.length >= 5){ 
-    console.log('that password is strong enough!');
-} else { // if first code block is not true, then move to else if/else statement
-  console.log('password is not strong enough')
+for(let i = 0; i < scores.length; i++){
+
+    if(scores[i] === 0){
+        continue; // continue makes it so we basically skip whatever is in the argument
+        // when u run this, 0 should not be logged into the console anymore
+    }
+
+    console.log('your score: ', scores[i]);
+
+    if(scores[i] === 100){
+        console.log('congrats, you got the top score!');
+        break; // break keyword breaks you out of the loop. upon reaching 100, it does not do 20 and 10 anymore
+    }
 }
 
-// logical NOT (!)
+// switch statements
+const grade = 'z';
 
-let user = false;
-
-// if statements only run if value is true. since user is false, we used (!) NOT operator to make false into true
-if(!user){
-    console.log('you must be logged in to continue');
+// remeber, switches use strict equality (===) so putting in a number will not work.
+switch(grade){
+    case 'A':
+        console.log('you got an A!');
+        break;
+    case 'B':
+        console.log('you got an B!');
+        break;
+    case 'C':
+        console.log('you got an C!');
+        break;
+    case 'D':
+        console.log('you got an D!');
+        break;
+    case 'E':
+        console.log('you got an E!');
+        break;
+    default:
+        console.log('not a valid grade')
 }
 
-console.log(!true);
-console.log(!false);
+// use case instead of \/
+
+// using if statements
+// if(grade === 'A'){
+
+// } else if(grade === 'B'){
+
+// } else if(grade === 'C'){
+
+// } else if(grade === 'D'){
+    
+// } else if(grade === 'E'){
+
+// } else {
+
+// }
