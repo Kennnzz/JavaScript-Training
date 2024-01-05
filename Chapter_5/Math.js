@@ -12,6 +12,6 @@ console.log(Math.ceil(area)); // always round up
 console.log(Math.trunc(area)); // leaves the integer
 
 // random numbers
-const random = Math.random()
+const random = Math.random() // random is always between 0-1.
 console.log(random);
 console.log(Math.round(random * 100));
