@@ -1,15 +1,10 @@
-// while loops
-const names = ['shaun', 'mario', 'luigi'];
-// let i = 0;
+// do while loops
 
-// while(i < 5){
-//     console.log('in loop: ', i);
-//     i++; // For while loops, to avoid infinite loops, u have to increment 'i'.
-//     // in for loops it was in the parameters, for while, its in the code block
-// }
+// do while is basically no matter what, it will run once.
 
-let i = 0;
-while(i < names.length){
-    console.log(names[i]);
+let i = 5;
+
+do{
+    console.log('val of i is: ', i);
     i++;
-}
+} while(i < 5);
