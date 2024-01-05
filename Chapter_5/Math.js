@@ -15,3 +15,22 @@ console.log(Math.trunc(area)); // leaves the integer
 const random = Math.random() // random is always between 0-1.
 console.log(random);
 console.log(Math.round(random * 100));
+
+// Primitive & Reference Types
+/* 
+Primitive Types:
+- numbers
+- strings
+- Booleans
+- null
+- undefined
+- symbols
+
+Reference Types
+- all types of objects
+    - object literals
+    - arrays
+    - functions
+    - dates
+    - all other objects
+*/
