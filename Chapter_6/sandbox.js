@@ -1,13 +1,19 @@
-// querySelector
-// const para = document.querySelector('div.error'); // adding a dot '.' in front grabs whatever is pointed to
-// that class tag (does not work for divs. for div u need to add 'div' in front of the dot). 
-// in this case inside this html, its .error "this is an error message".
-// a regular tag does not need a dot '.'.
+// get an element by ID
+// const title = document.getElementById('page-title'); // a hash '#' is needed if u want to get an id,
+// but only use that when you are using querySelector
+// console.log(title);
 
-// console.log(para);
+// get elements by their class name
+// const errors = document.getElementsByClassName('error') // again, don't need a dot '.' because method is
+// already implied that we're getting an element by class name
+// console.log(errors);
+// console.log(errors[0]);
+// errors.forEach(error => { // cannot use foreach in an html collection
+//     console.log(error);
+// })
 
-// querySelectorAll
-const paras = document.querySelectorAll('p');
-const errors = document.querySelectorAll('.error')
 
-console.log(errors)
+// get elements by their tag name
+const paras = document.getElementsByTagName('p');
+console.log(paras);
+console.log(paras[1]);
